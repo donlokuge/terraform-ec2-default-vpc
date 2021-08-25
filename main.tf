@@ -33,7 +33,7 @@ resource "aws_instance" "aws_ins_web" {
   instance_type               = "t2.micro"
   vpc_security_group_ids      = [aws_security_group.aws_sg.id]
   associate_public_ip_address = true
-  key_name                    = "ec2_key"
+  key_name                    = "ec2_key" # your key here
 
   tags = {
     Name = "my instance"
